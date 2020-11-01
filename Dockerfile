@@ -1,5 +1,7 @@
-FROM fballiano/magento2-apache-php
-MAINTAINER Fabrizio Balliano <fabrizio@fabrizioballiano.com>
+FROM betterweb/magento2-apache-php:7.3
+MAINTAINER Mitchell R <support@bettercorp.co.za>
+LABEL org.label-schema.vcs-url="https://github.com/BetterCorp/docker-magento2-cron"
+
 
 ADD crontab /crontab.www-data
 ADD start.sh /start.sh
